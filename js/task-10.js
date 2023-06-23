@@ -10,11 +10,11 @@ createBtn.addEventListener('click',createBox);
 const input = document.querySelector('input');
 resetBtn.addEventListener('click', destroyBoxes);
 const container = document.querySelector('#boxes');
-input.addEventListener('input', onInputChange);
+input.addEventListener('change', onInputChange);
 
 function onInputChange(event) {
   console.log(event.currentTarget.value);
-  createBox(event.currentTarget.value);
+   createBox(event.currentTarget.value);
 }
 function createBox(amount) {
   
@@ -42,6 +42,6 @@ function createBox(amount) {
 function destroyBoxes() {
   
   container.innerHTML = '';
-  input.innerHTML = '';
+  
 }
 

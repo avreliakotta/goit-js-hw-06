@@ -9,5 +9,6 @@ const textEl = document.querySelector('.color');
 buttonEl.addEventListener('click', onButtonClick);
 function onButtonClick(event) {
  textEl.style.color=getRandomHexColor();
+ body.style.backgroundColor= textEl.style.color;
  }
 
